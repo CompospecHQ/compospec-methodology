@@ -4,7 +4,11 @@
 
 ---
 
-<img width="1580" height="714" alt="image" src="https://github.com/user-attachments/assets/0def0bfb-6900-4280-9424-24ef10f5fb25" />
+## Quick Start
+
+[![Compospec Tutorial](assets/videos/tutorial-thumbnail.png)](https://www.youtube.com/watch?v=e5SyJbzF-gQ)
+
+*Click to watch: Create your first AI-ready spec in minutes*
 
 ---
 
