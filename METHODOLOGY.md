@@ -1,4 +1,4 @@
-<img width="1580" height="714" alt="image" src="https://github.com/user-attachments/assets/d57edb47-e347-4da7-9640-804db95b33cc" /># The Compospec Methodology: Deep Dive
+# The Compospec Methodology: Deep Dive
 
 **How structured context blocks enable specification intelligence**
 
