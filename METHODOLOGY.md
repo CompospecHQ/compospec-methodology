@@ -48,6 +48,7 @@ UI components nest. Code modules nest. API endpoints nest. Requirements should t
 | **Section** | Layout region | Controller | Business logic layer |
 | **Component** | React component | Method/Function | Domain object |
 | **Element** | HTML element | Parameter | Data field |
+
 ```mermaid
 graph TB
     subgraph "Frontend Mental Model"
@@ -101,6 +102,7 @@ graph TB
 Every card (except Product) has **exactly one parent**. This single constraint creates:
 
 #### 1. Dependency Graph
+
 ```mermaid
 graph TD
     P[Product: E-commerce Platform]
@@ -156,6 +158,7 @@ Product: Mobile Banking App
 When AI generates code for "Amount Input", it has the full context chain — not just the component spec.
 
 #### 3. Traceability
+
 ```mermaid
 graph LR
     A[Business Goal] --> B[Feature Requirement]
@@ -179,6 +182,7 @@ graph LR
 ## 2. The Workflow
 
 ### 2.1 Card Creation
+
 ```mermaid
 sequenceDiagram
     actor User
@@ -199,6 +203,7 @@ sequenceDiagram
 **Key insight:** Cards start **unlinked**. Linking is explicit, not automatic.
 
 ### 2.2 Linking Strategy
+
 ```mermaid
 graph TB
     A[Unlinked Card] --> B{Click Footer Area}
@@ -228,13 +233,13 @@ graph TB
 ### 2.3 Flow Diagram Generation
 
 When a link is created:
+
 ```mermaid
 graph LR
     A[Link Created] --> B[Traverse Parent Chain]
     B --> C[Build Tree Structure]
     C --> D[Render as Nested Diagram]
     D --> E[Diagram Saved as Flow]
-    
 ```
 
 **Flow diagram = visual rendering of card relationships**
@@ -292,6 +297,7 @@ Behavior:
 | One-time snapshot | Version-controlled, persistent |
 
 ### 3.2 The "Prompt Debt" Problem
+
 ```mermaid
 graph TB
     subgraph "Traditional Workflow"
@@ -321,6 +327,7 @@ graph TB
 ### 3.3 Future: Cards as AI Prompts
 
 *(Roadmap: Q2 2026)*
+
 ```mermaid
 graph LR
     A[Component Card] --> B[Auto-Generated Questions]
@@ -346,6 +353,7 @@ Each card becomes a **queryable semantic unit** that AI agents can:
 ## 4. Implementation: Compospec Platform
 
 ### 4.1 Dashboard
+
 ```mermaid
 graph LR
     A[Dashboard] --> B[Card Count by Type]
@@ -361,7 +369,6 @@ graph LR
     
     C --> C1[Total Flows: 47]
     C --> C2[Click to Navigate]
-    
 ```
 
 ### 4.2 Card Management
@@ -372,6 +379,7 @@ graph LR
 - **Date:** Cards created in date range
 - **Type:** Stack view by card type
 - **Unlinked:** Orphan cards flagged
+
 ```mermaid
 graph TB
     A[All Cards] --> B{Apply Filter}
@@ -379,7 +387,6 @@ graph TB
     B -->|Date| D[Timeline View]
     B -->|Type| E[Type Stack View]
     B -->|Unlinked| F[Orphan Cards Alert]
-    
 ```
 
 **Actions:**
@@ -391,6 +398,7 @@ graph TB
 - Navigate to flow diagram
 
 ### 4.3 Flow Management
+
 The Flows menu provides a bird's-eye view of all relationships across your spec:
 
 ```mermaid
@@ -404,14 +412,13 @@ graph LR
     F --> H[Export Flow]
     F --> I[Share Link]
     F --> J[Re-link Parent]
+```
 
 **Key capabilities:**
 - Visual dependency mapping
 - Export as PNG or Mermaid
 - Share link (public or private)
 - Navigate to flow diagram
-
-```
 
 ### 4.4 Templates
 
@@ -443,6 +450,7 @@ sequenceDiagram
     User->>System: Draw boxes + add notes
     User->>System: Auto-create cards from annotations
     System->>User: Cards linked to UI parent
+```
 
 **How it works:**
 1. Upload any UI screenshot or wireframe
@@ -450,13 +458,13 @@ sequenceDiagram
 3. Add quick notes per box
 4. System auto-generates cards from your annotations
 5. Cards are automatically linked to their UI parent
-```
 
 Turn legacy UI screenshots into structured specs. No manual typing.
 
 ### 4.6 MCP Integration
 
 *(Coming Q1 2026)*
+
 ```mermaid
 graph TB
     A[Compospec MCP Server] --> B[Claude Desktop]
@@ -470,7 +478,8 @@ graph TB
     E --> F
     
     F --> G[Generate Code with Full Spec]
-    
+```
+
 Direct protocol integration → AI tools query Compospec cards in real-time.
 
 ---
