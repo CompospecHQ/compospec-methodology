@@ -16,12 +16,14 @@
 
 Typical documentation structure:
 
+```
 /docs
 ├─ README.md              (overview)
 ├─ ARCHITECTURE.md        (system design)
 ├─ API_SPEC.md            (endpoints)
 ├─ USER_FLOWS.md          (user journeys)
 └─ COMPONENTS.md          (UI components)
+```
 
 **Issues:**
 - ❌ Disconnected files with no relationships
@@ -32,8 +34,10 @@ Typical documentation structure:
 
 ### The Compospec Solution
 
+```
 .compospec/
 └─ spec.md    (6-level hierarchy + auto-generated flow)
+```
 
 **Benefits:**
 - ✅ Single source of truth
@@ -49,21 +53,21 @@ Typical documentation structure:
 
 Every Compospec export follows this semantic structure:
 
-🟣 Product                    (Top-level: entire product)
-└─ 🟣 Module                (Feature group)
-└─ 🟪 UI               (User interface)
-└─ 🟪 Section      (UI subdivision)
-└─ 🟣 Component (Reusable element)
-└─ 🟣 Element (Atomic part)
+🟣 Product (Top-level: entire product)
+└─ 🟣 Module (Feature group)
+   └─ 🟪 UI (User interface)
+      └─ 🟪 Section (UI subdivision)
+         └─ 🟣 Component (Reusable element)
+            └─ 🟣 Element (Atomic part)
 
 **Example: Medical Platform**
 
 🟣 Livemedy (Product)
 └─ 🟣 User Management (Module)
-└─ 🟪 My Page (UI)
-└─ 🟪 Personal Information (Section)
-└─ 🟣 Medical Background Card (Component)
-└─ 🟣 Chronic Diseases List (Element)
+   └─ 🟪 My Page (UI)
+      └─ 🟪 Personal Information (Section)
+         └─ 🟣 Medical Background Card (Component)
+            └─ 🟣 Chronic Diseases List (Element)
 
 This hierarchy is preserved in the exported markdown, making it machine-readable.
 
