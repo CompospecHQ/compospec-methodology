@@ -391,18 +391,26 @@ graph TB
 - Navigate to flow diagram
 
 ### 4.3 Flow Management
+The Flows menu provides a bird's-eye view of all relationships across your spec:
+
 ```mermaid
 graph LR
     A[Flows Menu] --> B[Grid View of All Flows]
-    B --> C{Select Flow}
+    B --> C[Select Flow]
     C --> D[Expand Top Parent Node]
     D --> E[Reveal Full Tree]
-    E --> F{User Actions}
+    E --> F[User Actions]
     F --> G[Zoom In/Out]
     F --> H[Export Flow]
     F --> I[Share Link]
     F --> J[Re-link Parent]
+```
 
+**Key capabilities:**
+- Visual dependency mapping
+- Export as PNG or Mermaid
+- Share link (public or private)
+- Navigate to flow diagram
 
 ```
 
