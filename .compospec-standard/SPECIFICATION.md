@@ -182,8 +182,6 @@ git push
 
 ### Link-Based Workflow (Live)
 
-### Link-Based Workflow (Live)
-
 ![Claude Code Directory Mapping](../assets/screenshots/claude-code-directory-mapping.png)
 *How Compospec specs map to Claude Code's directory structure*
 
