@@ -182,8 +182,9 @@ git push
 
 ### Link-Based Workflow (Live)
 
-![Claude Code Directory Mapping](../assets/screenshots/claude-code-directory-mapping.png)
-*How Compospec specs map to Claude Code's directory structure*
+![Claude Code Directory Mapping](/assets/screenshots/claude-code-directory-mapping.png)
+
+> How Compospec specs map to Claude Code's directory structure
 
 **Step 1: Create public link in Compospec**
 
