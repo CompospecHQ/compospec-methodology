@@ -88,11 +88,11 @@ This hierarchy is preserved in the exported markdown, making it machine-readable
 
 ### Advanced Setup (Optional)
 
+```
 .compospec/
 ├─ spec.md          # Full specification
 ├─ flow.md          # Standalone flow diagram (Mermaid syntax)
 └─ spec.pdf         # Stakeholder-friendly version
-
 ---
 
 ## Export Format
