@@ -404,7 +404,6 @@ graph LR
     F --> H[Export Flow]
     F --> I[Share Link]
     F --> J[Re-link Parent]
-```
 
 **Key capabilities:**
 - Visual dependency mapping
@@ -444,7 +443,6 @@ sequenceDiagram
     User->>System: Draw boxes + add notes
     User->>System: Auto-create cards from annotations
     System->>User: Cards linked to UI parent
-```
 
 **How it works:**
 1. Upload any UI screenshot or wireframe
@@ -473,9 +471,6 @@ graph TB
     
     F --> G[Generate Code with Full Spec]
     
-
-```
-
 Direct protocol integration → AI tools query Compospec cards in real-time.
 
 ---
