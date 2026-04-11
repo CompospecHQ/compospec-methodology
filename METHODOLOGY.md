@@ -429,12 +429,13 @@ Import templates → customize → link to your product structure.
 ### 4.5 Screenshot Annotation
 
 *(Coming Q1 2026)*
+
 ```mermaid
 sequenceDiagram
     actor User
     participant Browser as Screen Capture API
     participant System as Compospec
-    
+
     User->>Browser: Trigger screenshot
     Browser->>User: Select region
     User->>Browser: Capture
@@ -443,6 +444,14 @@ sequenceDiagram
     User->>System: Draw boxes + add notes
     User->>System: Auto-create cards from annotations
     System->>User: Cards linked to UI parent
+```
+
+**How it works:**
+1. Upload any UI screenshot or wireframe
+2. Draw boxes around components
+3. Add quick notes per box
+4. System auto-generates cards from your annotations
+5. Cards are automatically linked to their UI parent
 ```
 
 Turn legacy UI screenshots into structured specs. No manual typing.
