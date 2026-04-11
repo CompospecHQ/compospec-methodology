@@ -216,7 +216,7 @@ Now create the login screen
 
 **Live spec:** https://app.compospec.com/shared/91ca49ea-a1e1-4e43-abd2-f1ae42049f21
 
-![AI Content Moderation Flow](../assets/screenshots/ai-content-moderation-flow.png)
+![AI Content Moderation Flow](/assets/screenshots/ai-content-moderation-flow.png)
 *Auto-generated flow diagram: 6 modules, 86 cards, complete product structure*
 
 **Structure:**
