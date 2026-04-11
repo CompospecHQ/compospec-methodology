@@ -77,7 +77,7 @@ This hierarchy is preserved in the exported markdown, making it machine-readable
 
 **Visual Example:**
 
-![Livemedy UI Hierarchy](../assets/screenshots/livemedy-ui-hierarchy.png)
+![Livemedy UI Hierarchy](/assets/screenshots/livemedy-ui-hierarchy.png)
 *Real-world example: Livemedy medical platform showing 6-level hierarchy in action*
 ---
 
