@@ -75,6 +75,10 @@ Every Compospec export follows this semantic structure:
 
 This hierarchy is preserved in the exported markdown, making it machine-readable.
 
+**Visual Example:**
+
+![Livemedy UI Hierarchy](../assets/screenshots/livemedy-ui-hierarchy.png)
+*Real-world example: Livemedy medical platform showing 6-level hierarchy in action*
 ---
 
 ## Directory Structure
@@ -178,6 +182,11 @@ git push
 
 ### Link-Based Workflow (Live)
 
+### Link-Based Workflow (Live)
+
+![Claude Code Directory Mapping](../assets/screenshots/claude-code-directory-mapping.png)
+*How Compospec specs map to Claude Code's directory structure*
+
 **Step 1: Create public link in Compospec**
 
 Share → Public Link → Copy
@@ -208,6 +217,9 @@ Now create the login screen
 ### AI Content Moderation Platform
 
 **Live spec:** https://app.compospec.com/shared/91ca49ea-a1e1-4e43-abd2-f1ae42049f21
+
+![AI Content Moderation Flow](../assets/screenshots/ai-content-moderation-flow.png)
+*Auto-generated flow diagram: 6 modules, 86 cards, complete product structure*
 
 **Structure:**
 - 6 modules
